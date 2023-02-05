@@ -1,0 +1,2278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+.divTitulo{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.titulo{
+    font-size: 60px;
+}
+
+.imagem{
+    height: 500px;
+    width: 500px;
+    border-radius: 50% ;
+}
+
+.icones{
+    height: 170px;
+    width: 170px;   
+    position: absolute;
+}
+
+.iconeConfetti{
+    top: 250px;
+    right: 300px;
+}
+
+.iconePartyng{
+    top: 700px;
+    right: 400px;
+}
+
+.subtitulo{
+    color: #4e4b4b;
+}
+
+.copo{
+    left: 300px;
+    top: 500px;
+}
+
+.lhama{
+    width: 256px; 
+    height: 256px;
+    position: absolute;
+    top: 250px;
+    right: 1030px;
+    z-index: -2;
+}
+
+.section1{
+    margin: 120px 150px 0px 150px;
+    border-radius: 40px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 15%);
+}
+
+.fotoBox{
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 15%);
+    border-radius: 40px;
+}
+
+
+
+.section2{
+    padding: 120px 150px 0px 150px;
+}
+
+.flex{
+    display: flex;
+}
+
+.fotoSaturada{
+    height: 700px;
+    width: 500px;
+    margin: 50px 80px 50px 50px;
+    border-radius: 20px;
+}
+
+.marginTitulos{
+    margin-top: 75px;
+    font-size: 40px;
+}
+
+.subtituloTexto{
+    margin-top: 40px;
+}
+
+.divTextos{
+    padding-right: 100px;
+    width: 100%;
+}
+
+.segundaFoto{
+    margin: 50px 50px 50px 50px;
+}
+
+.gallery {
+    transform: translateY(-50%);
+    width: 100%;
+    margin-top: 250px;
+    height: 300px;
+    max-height: 28vw;
+    overflow: hidden;
+  }
+  
+  .gallery:before,
+  .gallery:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 3;
+  }
+  
+  .gallery:before {
+    left: 0;
+    background:  linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0,0,0,0) 100%);
+  }
+  
+  .gallery:after {
+    right: 0;
+    background:  linear-gradient(to left, rgb(255, 255, 255) 0%, rgba(0,0,0,0) 100%);
+  }
+  
+  .gallery__stream {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gallery__item {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: 1s all ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 15px;
+  }
+  
+  .gallery__item:nth-child(1) {
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(2) {
+    left: 0;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(3) {
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .gallery__item:nth-child(4) {
+    left: 100%;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(n+5) {
+    left: 100%;
+    z-index: 1;
+    transform: scale(.8);
+  }
+  
+  /* Controllers */
+  
+  .gallery__prev,
+  .gallery__next {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%) scale(.8);
+    cursor: pointer;
+  }
+  
+  .gallery__prev {
+    left: 0;
+  }
+  
+  .gallery__next {
+    left: 100%;
+  }
+  
+  /* Backgrounds */
+  
+  .bg-1 {
+    background-image: url(https://cdn.businessinsider.mx/wp-content/uploads/2020/02/10170754/mcdonaldsfotoprincipal-1024x620.jpg);
+  }
+  
+  .bg-2 {
+    background-image: url(https://www.aproximaviagem.pt/wp-content/uploads/2018/08/NaturWaterPark.jpg);
+  }
+  
+  .bg-3 {
+    background-image: url(https://www.radiowoking.co.uk/wp-content/uploads/2020/10/Nova-Cinema-Screen-One-2-Credit-Grahame-Larter-scaled.jpg);
+  }
+  
+  .bg-4 {
+    background-image: url(https://www.bessabeachhotel.com.br/wp-content/uploads/2018/05/20032018-DJI_0129-1024x767.jpg);
+  }
+  
+  .bg-5 {
+    background-image: url(https://i0.statig.com.br/bancodeimagens/8p/x2/j0/8px2j0dy44o30tif6sp9mgolj.jpg);
+  }
+  
+  .bg-6 {
+    background-image: url(https://i.pinimg.com/originals/2a/eb/cc/2aebcc327c418df1d20977df59b5ee1f.jpg);
+  }
+  
+  .bg-7 {
+    background-image: url(https://ad.org.br/wp-content/uploads/2022/08/IMG_3567-730x438.jpg);
+  }
+
+  .calendar{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    border: 2px solid #302f2f83;
+    margin: 20px 10px 20px 10px;
+  }
+
+  .blue{
+    text-align: center;
+    background-color: #2b78ec;
+    border-bottom: 2px solid #302f2f83;
+    height: 40px;
+    border-radius: 12px 12px 0px 0px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #4e4b4b;
+  }
+  
+  .tempo{
+    font-size: 50px;
+    font-weight: 400;
+    color: #4e4b4b;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .align{
+    justify-content: center;
+    display: flex;
+  }
+
+  .horario{
+    font-size: 80px;
+    font-weight: 400;
+    color: #4e4b4b;
+    margin: 0px;
+  }
+
+  .separacao{
+    font-size: 40px;
+    font-weight: 400;
+    color: #4e4b4b;
+    margin: 0px;
+  }
+
+  .content-coracao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 50px auto;
+    -webkit-animation: pulsa 1s linear 0s infinite;
+  }
+  @keyframes pulsa {
+    0% {
+      transform: scale(0.9) rotate(0deg);
+    }
+    50% {
+      transform: scale(1) rotate(0deg);
+    }
+    70% {
+      transform: scale(1.1) rotate(0deg);
+    }
+    80% {
+      transform: scale(1.2) rotate(0deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  .square {
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    background: #e71940;
+    position: absolute;
+    top: 30px;
+  }
+  .circle:after,
+  .circle:before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 55px;
+    border-radius: 50%;
+    background: #e71940;
+  }
+  .circle:after {
+    left: 5px;
+    top: 6px;
+  }
+  .circle:before {
+    right: 5px;
+    top: 6px;
+  }
+
+  .musicas{
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .musica{
+    margin: 10px 0px 10px 10px;
+    width: 90%;
+  }
+
+  .musicas::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .musicas::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    background:     rgba(92, 92, 92, 0.212); /* color of the tracking area */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+  
+  .musicas::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: rgb(18, 113, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+  .imagemLocais{
+    height: 220px;
+    width: 220px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .divLocais{
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 15%);
+    width: 290px;
+    height: 320px;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+
+  .divLocais:hover{
+    z-index: 10;
+    cursor: pointer;
+    width: 292px;
+    height: 322px;
+  }
+
+  .iconesLocal{
+    color: red;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  .subtituloLocal{
+    color: #4e4b4b;
+    font-size: 18px;
+    padding: 0px 10px 0px 0px;
+  }
+
+  .segundo{
+    left: 1090px;
+  }
+
+  .terceiro{
+    left: 1390px;
+  }
+
+  .quarto{
+    left: 1260px;
+    z-index: 5;
+    top: 5100px;
+  }
+
+  .quinto{
+    left: 920px;
+    z-index: 5;
+    top: 5100px;
+  }
+
+  .estrada{
+    width: 100%;
+    height: 160px;
+    border-bottom: 2px dotted #040404;
+  }
+
+  .circleIMG{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid red;
+  }
+
+  .fotoCircle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .praiaIcone{
+    margin-top: 80px;
+  }
+
+  .divFotos{
+    height: 240px;
+    width: 180px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 15%);
+    padding: 15px 15px 40px 15px;
+    position: absolute;
+    top: 5900px;
+    background-color: #fff;
+  }
+
+  .fotos{
+    height: 100%;
+    width: 100%;
+  }
+
+  .foto1{
+    transform: rotate(-20deg);
+    left: 250px;
+  }
+
+  .foto2{
+    transform: rotate(20deg);
+    left: 650px;
+  }
+
+  .desenho{
+    margin-top: 300px;
+  }
+
+  .cabeca{
+    position: absolute;
+    left: 0px;
+    width: 650px;
+    top: 6400px;
+  }
+
+  .divCabeca{
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 15%);
+    margin-left: 400px;
+    border-radius: 40px;
+    width: 100%;
+  }
+
+  .textosCabeca{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .coracaoFundo{
+    justify-content: flex-end;
+  }
+
+  .coracaoFim{
+    height: 150px;
+    width: 150px;
+    margin-right: 50px;
+  }
+
+  .assinatura{
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    color: #424242;
+  }
+
+  .ass{
+    margin-top: 88px;
+    color: #424242;
+  }
+
+@media only screen and (max-width: 1900px){
+
+  .lhama {
+    right: 1000px;
+  }
+
+}
+
+@media only screen and (max-width: 1880px){
+
+  .foto1 {
+    left: 230px;
+  }
+}
+
+@media only screen and (max-width: 1840px){
+
+  .subtitulo {
+    font-size: 22px;
+  }
+
+  .divLocais {
+    width: 260px;
+    height: 320px;
+  }
+
+  .divLocais:hover{
+    width: 262px;
+    height: 322px;
+  }
+}
+
+@media only screen and (max-width: 1820px){
+
+  .lhama {
+    right: 980px;
+  }
+}
+
+@media only screen and (max-width: 1800px){
+
+  .lhama {
+    right: 960px;
+  }
+
+  .divLocais {
+    width: 240px;
+  }
+
+  .imagemLocais{
+    height: 200px;
+    width: 200px;
+  }
+
+  .divLocais:hover{
+    width: 242px;
+  }
+}
+
+@media only screen and (max-width: 1780px){
+
+  .section1{
+    margin: 100px 130px 0px 130px;
+    border-radius: 40px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 15%);
+  }
+
+  .section2{
+    padding: 100px 130px 0px 130px;
+  }
+
+  .foto1 {
+    left: 180px;
+  }
+
+  .divFotos {
+    top: 5820px;
+  }
+
+}
+
+@media only screen and (max-width: 1760px){
+
+  .subtituloLocal {
+    font-size: 16px;
+  }
+
+  .divLocais {
+    height: 300px;
+  }
+
+  .segundo {
+    left: 1040px;
+  }
+
+  .terceiro {
+    left: 1320px;
+  }
+
+  .quinto {
+    left: 900px;
+    top: 5040px;
+  }
+
+  .quarto {
+    left: 1200px;
+    top: 5040px;
+  }
+}
+
+@media only screen and (max-width: 1740px){
+
+  .lhama {
+    right: 930px;
+  }
+
+  .marginTitulos {
+    font-size: 33px;
+  }
+}
+
+@media only screen and (max-width: 1700px){
+
+  .marginTitulos {
+    font-size: 33px;
+  }
+}
+
+@media only screen and (max-width: 1680px){
+
+  .lhama {
+    right: 910px;
+  }
+
+  .divLocais:hover {
+    height: 302px;
+  }
+
+  .quarto {
+    left: 1120px;
+    top: 4990px;
+  }
+
+  .divFotos {
+    top: 5770px;
+  }
+
+  .foto1 {
+    left: 140px;
+  }
+
+  .foto2 {
+    left: 600px;
+  }
+
+  .segundo {
+    left: 1010px;
+  }
+
+  .terceiro {
+    left: 1270px;
+  }
+
+  .quinto {
+    left: 860px;
+    top: 4990px;
+  }
+
+}
+
+@media only screen and (max-width: 1660px){ 
+  .iconePartyng {
+    right: 330px;
+  }
+
+  .lhama {
+    right: 890px;
+  }
+}
+
+@media only screen and (max-width: 1640px){ 
+
+  .fotoSaturada {
+    width: 400px;
+  }
+  .segundo {
+    left: 940px;
+  }
+  .terceiro {
+    left: 1210px;
+  }
+
+}
+
+@media only screen and (max-width: 1610px){ 
+  .lhama {
+    right: 860px;
+  }
+}
+
+@media only screen and (max-width: 1580px){ 
+
+  .iconeConfetti {
+    right: 220px;
+  }
+
+  .iconePartyng {
+    right: 260px;
+  }
+
+  .copo {
+    left: 260px;
+    top: 500px;
+  }
+
+  .segundo {
+      left: 920px;
+  }
+
+  .terceiro {
+    left: 1180px;
+  }
+
+  .quinto {
+    left: 780px;
+    top: 4990px;
+  }
+
+  .quarto {
+    left: 1050px;
+    top: 4990px;
+  }
+
+  .divTextos {
+    padding-right: 40px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1550px){
+
+  .lhama {
+    right: 830px;
+  }
+
+  .divLocais{
+    width: 200px;
+    height: 280px;
+  }
+
+  .divLocais:hover{
+    width: 202px;
+    height: 282px;
+  }
+
+  .imagemLocais{
+    max-width: 80%;
+    max-height: 65%;
+  }
+
+  .subtituloLocal {
+    font-size: 15px;
+  }
+
+  .iconesLocal{
+    font-size: 25px;
+    margin-left: 10px;
+  }
+
+  .segundo {
+    left: 900px;
+  }
+
+  .terceiro {
+    left: 1140px;
+  }
+
+  .quarto {
+    left: 1020px;
+  }
+
+}
+
+@media only screen and (max-width: 1500px){
+
+  .lhama {
+    right: 800px;
+  }
+
+  .copo {
+    left: 250px;
+    top: 550px;
+  }
+
+  .segundo {
+    left: 890px;
+  }
+
+  .terceiro {
+    left: 1120px;
+  }
+
+  .quinto {
+    left: 760px;
+    top: 4990px;
+  }
+
+  .quarto {
+    left: 1000px;
+  }
+
+  .estrada2{
+    width: 70%;
+  }
+}
+
+
+@media only screen and (max-width: 1492px){
+  .quinto, .quarto {
+    top: 5030px;
+  }
+}
+
+@media only screen and (max-width: 1484px){
+  .divFotos {
+    height: 200px;
+    width: 150px;
+    top: 5880px;
+  }
+}
+
+@media only screen and (max-width: 1476px){
+  .quinto, .quarto {
+    top: 5070px;
+  }
+}
+
+@media only screen and (max-width: 1458px){
+  .quinto, .quarto {
+    top: 5100px;
+  }
+}
+
+
+@media only screen and (max-width: 1450px){
+  .lhama {
+    right: 780px;
+  }
+
+  .divFotos {
+    top: 5500px;
+  }
+
+  .cabeca {
+    position: absolute;
+    left: 0px;
+    width: 650px;
+    top: 6000px;
+  }
+
+  .icones {
+    height: 140px;
+    width: 140px;
+  }
+
+  .fotoSaturada {
+    width: 350px;
+    height: 650px;
+  }
+
+  .segundo {
+    left: 830px;
+  }
+
+  .subtitulo {
+    font-size: 19px;
+  }
+  .terceiro {
+    left: 1050px;
+  }
+
+  .quinto, .quarto {
+    top: 4770px;
+  }
+
+  .quinto {
+    left: 720px;
+  }
+
+  .quarto {
+    left: 940px;
+  }
+}
+
+@media only screen and (max-width: 1430px){
+  .quinto, .quarto {
+    top: 4830px;
+  }
+
+  .divFotos {
+    top: 5570px;
+  }
+
+  .gallery__stream {
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  .imagem {
+    height: 400px;
+    width: 400px;
+  }
+
+  .lhama {
+    right: 700px;
+  }
+
+  .fotoBox{
+    height: 100%;
+  }
+
+  .quinto, .quarto {
+    top: 4750px;
+  } 
+
+  .divFotos {
+    top: 5450px;
+  }
+
+  .foto2 {
+    left: 550px;
+  }
+
+  .iconePartyng {
+    top: 600px;
+  }
+}
+
+@media only screen and (max-width: 1390px){
+  .horario {
+    font-size: 70px;
+  }
+
+  .calendar {
+    height: 130px;
+    width: 130px;
+  }
+
+  .tempo {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .divLocais{
+      width: 180px;
+      height: 250px;
+  }
+
+  .divLocais:hover{
+    width: 182px;
+    height: 252px;
+}
+
+  .divCabeca {
+    margin-left: 350px;
+  }
+}
+
+@media only screen and (max-width: 1366px){
+
+  .titulo {
+      font-size: 50px;
+  }
+
+  .imagem {
+    margin-top: 30px;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 40px;
+  }
+
+  .lhama {
+    right: 690px;
+  }
+
+  .copo {
+    left: 220px;
+  }
+
+  .iconeConfetti {
+    right: 150px;
+  }
+
+  .segundo {
+    left: 810px;
+  }
+
+  .terceiro {
+    left: 1010px;
+  }
+
+  .quinto, .quarto {
+    top: 4800px;
+  }
+
+  .quinto {
+    left: 700px;
+  }
+
+  .quarto {
+    left: 900px;
+  }
+
+  .divFotos {
+    top: 5500px;
+  }
+
+  .foto2 {
+    left: 500px;
+  }
+
+  .ass {
+    margin-top: 78px;
+    color: #424242;
+  }
+
+  .assinatura {
+    font-size: 55px;
+  }
+
+  .coracaoFim {
+    height: 120px;
+    width: 120px;
+  }
+
+  .iconePartyng {
+    right: 230px;
+  }
+
+}
+
+@media only screen and (max-width: 1350px){
+  .fotoSaturada {
+    margin: 50px 50px 50px 50px;
+  }
+}
+
+@media only screen and (max-width: 1330px){
+  .lhama {
+    width: 220px;
+      height: 220px;
+  }
+
+  .segundo {
+    left: 780px;
+  }
+
+  .terceiro {
+    left: 980px;
+  }
+
+  .quinto, .quarto {
+    top: 4840px;
+  }
+
+  .divFotos {
+    top: 5550px;
+  }
+
+  .quinto {
+    left: 660px;
+  }
+
+  .quarto {
+    left: 860px;
+  }
+}
+
+@media only screen and (max-width: 1320px){
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .quinto, .quarto {
+    top: 4800px;
+  } 
+
+  .divFotos {
+    top: 5500px;
+  }
+}
+
+@media only screen and (max-width: 1300px){
+
+  .lhama {
+    right: 670px;
+  }
+
+  .divLocais {
+    width: 170px;
+    height: 240px;
+  }
+
+  .divLocais:hover {
+    width: 172px;
+    height: 242px;
+  }
+
+  .segundo {
+    left: 760px;
+  }
+
+  .terceiro {
+    left: 950px;
+  }
+
+  .quinto, .quarto {
+    top: 4820px;
+  }
+
+  .divFotos {
+    height: 180px;
+    width: 130px;
+    top: 5540px;
+  }
+
+  .foto2 {
+    left: 470px;
+  }
+}
+
+@media only screen and (max-width: 1250px){
+
+  .fotoSaturada {
+    margin: 35px;
+  }
+
+  .lhama {
+    right: 650px;
+  }
+
+  .copo {
+    left: 200px;
+  }
+
+  .section1 {
+    margin: 100px 100px 0px 100px;
+  }
+
+  .section2 {
+    padding: 100px 100px 0px 100px;
+  }
+
+  .segundo {
+    left: 720px;
+  }
+
+  .terceiro {
+    left: 930px;
+  }
+
+  .quinto, .quarto {
+    top: 4700px;
+  }
+
+  .quinto {
+    left: 610px;
+  }
+
+  .quarto {
+    left: 820px;
+  }
+
+  .divFotos {
+    top: 5380px;
+  }
+
+  .cabeca {
+    top: 5700px;
+  }
+
+}
+
+@media only screen and (max-width: 1210px){
+
+  .segundo {
+    left: 700px;
+  }
+
+  .terceiro {
+    left: 890px;
+  }
+
+  .quinto {
+    left: 590px;
+  }
+
+  .quarto {
+    left: 800px;
+  }
+
+  .quinto, .quarto {
+    top: 4730px;
+  }
+
+  .divFotos {
+    top: 5440px;
+  }
+
+  .cabeca {
+    position: absolute;
+    left: 0px;
+    width: 650px;
+    top: 5800px;
+  }
+
+}
+
+@media only screen and (max-width: 1100px){
+
+}
+
+@media only screen and (max-width: 1050px){
+
+}
+
+@media only screen and (max-width: 1024px){
+
+  .titulo {
+    font-size: 40px;
+}
+
+}
+
+
+@media only screen and (max-width: 970px){
+
+}
+
+@media only screen and (max-width: 970px){
+
+}
+
+
+@media only screen and (max-width: 850px){
+
+}
+
+@media only screen and (max-width: 750px){
+
+}
+
+@media only screen and (max-width: 700px){
+
+}
+
+@media only screen and (max-width: 650px){
+
+}
+
+@media only screen and (max-width: 600px){
+
+}
+
+@media only screen and (max-width: 550px){
+
+}
+
+@media only screen and (max-width: 525px){
+
+}
+
+@media only screen and (max-width: 500px){
+
+  .titulo {
+    font-size: 24px;
+  }
+
+  .imagem {
+    height: 200px;
+    width: 200px;
+  }
+
+  .subtitulo {
+    font-size: 14px;
+  }
+
+  .icones {
+    height: 60px;
+    width: 60px;
+  }
+
+  .iconeConfetti {
+    right: 50px;
+    top: 220px;
+  }
+
+  .copo {
+    left: 60px;
+    top: 380px;
+  }
+
+  .iconePartyng {
+    right: 80px;
+    top: 380px;
+  }
+
+  .section1 {
+    margin: 100px 30px 30px 30px;
+  }
+
+  .marginTitulos {
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .fotoSaturada {
+    width: 370px;
+    height: 550px;
+  }
+
+  .subtitulo {
+    font-size: 14px;
+    padding: 10px 25px 10px 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .musicaParabens{
+    width: 90%;
+  }
+
+  .divTextos {
+    padding-right: 0px;
+  }
+
+  .disflex{
+    display: inline;
+  }
+
+  .gallery {
+    margin-top: 120px;
+  }
+
+  .disable{
+    display: none;
+  }
+
+  .section1 {
+      margin: 50px 30px 30px 30px;
+  }
+
+  .calendar {
+    height: 100px;
+    width: 100px;
+  }
+
+  .blue {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .tempo {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+
+  .separacao {
+    font-size: 30px;
+    font-weight: 400;
+    color: #4e4b4b;
+    margin: 0px;
+  }
+
+  .horario {
+    font-size: 60px;
+  }
+
+  .section1{
+    height: 1250px;
+  }
+
+  .musicaParabens{
+    border-radius: 12px;
+    width: 90%;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .spaceCorrect2{
+    height: 1550px;
+  }
+
+  .primeiro{
+      margin-left: 50px;
+  }
+
+  .terceiro {
+    left: 80px;
+    top: 5330px;
+  }
+
+  .segundo {
+    left: 260px;
+    top: 5200px;
+  }
+
+  .quarto {
+    top: 5590px;
+    left: 80px;
+  }
+
+  .quinto {
+      top: 5480px;
+      left: 260px;
+  }
+
+  .foto1 {
+    left: 80px;
+    top: 6150px;
+  }
+
+  .foto2 {
+    left: 270px;
+    top: 6200px;
+  }
+
+  .cabeca {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 6400px;
+  }
+
+  .divCabeca {
+    margin: 350px 0px 0px 0px;
+  }
+
+  .fimSection{
+    margin: 50px 30px 30px 30px;
+    padding: 10px;
+  }
+
+  .textosCabeca{
+    margin: 0px;
+  }
+
+  .tituloCabeca {
+    margin: 50px 0px 20px 0px;
+  }
+
+  .coracaoFim {
+    height: 80px;
+    width: 80px;
+  }
+
+  .lhama {
+    width: 140px;
+    height: 140px;
+    right: 240px;
+    top: 200px;
+  }
+
+  .assinatura {
+    font-size: 35px;
+  }
+
+  .ass {
+    margin-top: 43px;
+    color: #424242;
+  }
+
+}
+
+@media only screen and (max-width: 480px){
+  .fotoSaturada {
+    width: 340px;
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 475px){
+  .fotoSaturada {
+    width: 340px;
+    height: 550px;
+  }
+
+  .segundo, .quinto{
+    left: 240px;
+  }
+
+
+  .cabeca {
+    top: 6460px;
+  }
+
+  .terceiro {
+    top: 5335px;
+  }
+
+  .foto2 {
+    left: 250px;
+    top: 6260px;
+  }
+}
+
+@media only screen and (max-width: 473px){
+  .fotoSaturada {
+    width: 340px;
+    height: 550px;
+  }
+
+  .quarto {
+    top: 5650px;
+    left: 80px;
+  }
+
+  .cabeca {
+    top: 6460px;
+  }
+
+  .lhama {
+    width: 140px;
+    height: 140px;
+    right: 230px;
+    top: 200px;
+  }
+
+  .quinto {
+    top: 5520px;
+    left: 240px;
+  }
+
+  .terceiro {
+    top: 5390px;
+  }
+
+  .segundo {
+    top: 5250px;
+    left: 240px;
+  }
+
+  .foto2 {
+    left: 230px;
+    top: 6300px;
+  }
+
+  .foto1 {
+    left: 80px;
+    top: 6200px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+
+  .lhama {
+    width: 140px;
+    height: 140px;
+    right: 210px;
+    top: 200px;
+  }
+
+  .iconeConfetti {
+    right: 40px;
+  }
+
+  .iconePartyng {
+    right: 60px;
+  }
+
+  .fotoSaturada {
+    width: 320px;
+  }
+
+  .section1 {
+    height: 1290px;
+  }
+
+  .primeiro {
+    margin-left: 20px;
+  }
+
+  .segundo {
+    top: 5320px;
+    left: 220px;
+  }
+
+  .terceiro{
+    left: 50px;
+    top: 5460px;
+  }
+
+  .quarto {
+    top: 5720px; 
+    left: 50px;
+  }
+
+  .foto1 {
+    left: 50px;
+    top: 6280px;
+  }
+
+  .foto1 {
+    left: 50px;
+    top: 6280px;
+  }
+
+  .quinto {
+    top: 5600px;
+    left: 220px;
+  }
+
+  .spaceCorrect2 {
+    height: 1550px;
+  }
+
+  .cabeca {
+    top: 6600px;
+  }
+
+}
+
+@media only screen and (max-width: 437px){
+  .fotoSaturada {
+    width: 305px;
+  }
+
+  .primeiraSection{
+      height: 1320px;
+  }
+
+  .foto2 {
+    left: 210px;
+    top: 6360px;
+  }
+}
+
+@media only screen and (max-width: 425px){
+
+  .titulo {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+
+  
+  .icones {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+  }
+
+  .imagem {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+  }
+
+  .subtitulo {
+    font-size: 12px;
+  }
+
+  .copo {
+    top: 350px;
+    left: 50px;
+  }
+
+  .iconeConfetti {
+    top: 240px;
+    right: 50px;
+  }
+
+  .iconePartyng {
+    right: 70px;
+    top: 400px;
+  }
+
+  .primeiraSection {
+    height: 1020px;
+  }
+
+  .responsitiSub{
+    margin-top: 50px;
+  }
+
+  .lhama {
+    right: 210px;
+    height: 100px;
+    top: 250px;
+    width: 100px;
+  }
+
+  .section1 {
+    margin: 150px 30px 0px 30px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 15%);
+  }
+
+  .disflex{
+    display: inline;
+  }
+
+  .fotoSaturada {
+    height: 350px;
+    width: 300px;
+    align-items: center;
+    margin: 40px 30px 20px 30px;
+    border-radius: 20px;
+  }
+
+  .marginTitulos {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .subtitulo {
+    font-size: 12px;
+    margin: 10px 20px 10px 20px;
+  }
+
+  .musicaParabens{
+      border-radius: 12px;
+      width: 90%;
+      margin: 20px 20px 20px 20px;
+  }
+
+  .experiencias{
+    margin: 20px 30px 10px 30px ;
+  }
+
+  .gallery {
+    margin-top: 100px;
+  }
+
+  .fotoBox {
+    text-align: center;
+    margin: 0px 30px 20px 30px;
+  }
+
+  .blue {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #2b78ec;
+    border-bottom: 2px solid #302f2f83;
+    height: 30px;
+    border-radius: 12px 12px 0px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4e4b4b;
+  }
+
+  .calendar {
+    height: 120px;
+    width: 120px;
+    border-radius: 15px;
+    border: 2px solid #302f2f83;
+    margin: 20px 10px 20px 10px;
+  }
+
+  .tempo {
+    font-size: 50px;
+    font-weight: 400;
+    color: #4e4b4b;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .horario {
+    font-size: 60px;
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  .coracaoDiv{
+    height: 400px;
+  }
+
+  .musicas::-webkit-scrollbar {
+    display: none;
+  }
+
+  .musicas::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  .musicas::-webkit-scrollbar-thumb{
+    display: none;
+  }
+
+  .musicas {
+    margin-top: 40px;
+    padding: 12px;
+    height: 500px;
+    margin-bottom: 40px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .disable{
+    display: none;
+  }
+
+  .spaceCorrect{
+    margin: 40px 30px 0px 30px;
+    height: 1040px;
+  }
+
+  .spaceCorrect2{
+    margin: 40px 30px 0px 30px;
+    height: 1700px;
+  }
+  .imagemLocais {
+    height: 160px;
+    width: 160px;
+  }
+
+  .divLocais{
+    height: 250px;
+    width: 200px;
+  }
+
+  .divLocais:hover{
+    height: 252px;
+    width: 202px;
+  }
+
+  .iconesLocal{
+    font-size: 25px !important;
+    margin-left: 5px;
+  }
+
+  .primeiro{
+    left: 50px;
+  }
+  .subtituloLocal{
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .terceiro {
+    left: 50px;
+    top: 4870px;
+  }
+
+  .quarto {
+    left: 160px;
+    top: 5100px;
+  }
+
+  .quinto {
+    left: 50px;
+    top: 5330px;
+  }
+
+  .segundo {
+    top: 4660px;
+    left: 160px;
+  }
+
+  .divFotos {
+    height: 180px;
+    width: 150px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 15%);
+    padding: 15px 15px 40px 15px;
+    position: absolute;
+    background-color: #fff;
+  }
+
+  .divFotos {
+    top: 5850px;
+  }
+
+  .foto1{
+    left: 60px;
+  }
+
+  .foto2 {
+    top: 5990px;
+    left: 180px;
+  }
+
+  .desenho{
+    margin: 400px 30px 30px 30px;
+
+  }
+
+  .iconeViagem{
+    height: 40px;
+    width: 40px;
+  }
+
+  .cabeca {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    top: 6300px;
+  }
+
+  .divCabeca{
+    margin-top: 350px;
+    width: 100%;
+  }
+
+  .tituloCabeca {
+    padding-top: 40px;
+  }
+
+  .divTextos{
+    padding-right: 0px;
+  }
+
+  .fimSection{
+    padding: 0px;
+  }
+
+  .assinatura {
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    color: #424242;
+  }
+
+  .coracaoFim {
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+  }
+
+  .ass {
+    margin-top: 35px;
+    margin-right: 10px;
+    color: #424242;
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 415px){
+  .fotoSaturada {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 410px){
+  .primeiraSection {
+    height: 1030px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .lhama {
+    right: 200px;
+    height: 100px;
+    top: 250px;
+    width: 100px;
+  }
+
+  .fotoSaturada {
+    width: 280px;
+  }
+
+  .primeiro {
+    left: 30px;
+  }
+
+  .segundo, .quarto {
+    left: 140px;
+  }
+
+  .divFotos {
+    height: 160px;
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 393px){
+  .primeiraSection {
+    height: 1050px;
+  }
+
+  .spaceCorrect2 {
+    margin: 40px 30px 0px 30px;
+    height: 1660px;
+  }
+
+  .fotoSaturada {
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 393px){
+  .primeiraSection {
+    height: 1060px;
+  }
+}
+
+@media only screen and (max-width: 386px){
+  .fotoSaturada {
+    width: 265px;
+  }
+}
+
+@media only screen and (max-width: 384px){
+  .divCabeca {
+    margin-top: 300px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 382px){
+  .segundo, .quarto {
+    left: 130px;
+  }
+
+  .foto2 {
+    left: 160px;
+  }
+}
+
+@media only screen and (max-width: 380px){
+  .copo {
+    left: 30px;
+  }
+
+  .iconeConfetti {
+    top: 240px;
+    right: 30px;
+  }
+
+  .iconePartyng {
+    right: 50px;
+    top: 400px;
+  }
+
+  .fotoSaturada {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 379px){
+  .subtitulo {
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .segundo {
+    top: 4710px;
+    left: 160px;
+  }
+
+  .terceiro {
+    left: 50px;
+    top: 4920px;
+  }
+
+  .quarto {
+    left: 160px;
+    top: 5120px;
+  }
+
+  .spaceCorrect2 {
+    margin: 40px 30px 0px 30px;
+    height: 1600px;
+  }
+}
+
+@media only screen and (max-width: 379px){
+
+  .musicaParabens{
+    border-radius: 12px;
+    width: 90%;
+    margin: 10px 10px 10px 15px;
+  }
+
+  .spaceCorrect2 {
+    margin: 40px 30px 0px 30px;
+    height: 1640px;
+  }
+}
+
+
+
+@media only screen and (max-width: 378px){
+
+  .primeiraSection {
+    height: 1000px;
+  }
+
+  .primeiraSection {
+    height: 1000px;
+  }
+
+  .segundo {
+    top: 4610px;
+    left: 120px;
+  }
+
+  .terceiro {
+    left: 50px;
+    top: 4820px;
+  }
+
+  .quarto {
+    top: 5020px;
+    left: 120px;
+  }
+  
+
+  .quinto {
+    left: 50px;
+    top: 5230px;
+  }
+
+  .spaceCorrect2 {
+    margin: 40px 30px 0px 30px;
+    height: 1600px;
+  }
+
+  .divFotos {
+    top: 5720px;
+  }
+
+  .foto2 {
+    top: 5870px;
+  }
+
+  .cabeca {
+    top: 6200px;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .fotoSaturada {
+    width: 255px;
+  }
+}
+
+@media only screen and (max-width: 371px){
+  .lhama {
+    right: 190px;
+    height: 100px;
+    top: 250px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 363px){
+
+  .fotoSaturada {
+    width: 240px;
+  }
+
+  .segundo, .quarto {
+    left: 105px;
+  } 
+}
+
+@media only screen and (max-width: 355px){
+  .lhama {
+    right: 180px;
+    height: 100px;
+    top: 250px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 354px){
+  .spaceCorrect2 {
+    margin: 40px 30px 0px 30px;
+    height: 1570px;
+  }
+}
+
+@media only screen and (max-width: 353px){
+  .primeiraSection {
+    height: 1020px;
+  }
+}
+
+
+@media only screen and (max-width: 352px){
+  .fotoSaturada {
+    width: 232px;
+  }
+}
+
+@media only screen and (max-width: 351px){
+  .primeiraSection {
+    height: 1040px;
+  }
+
+  .spaceCorrect2 {
+    margin: 40px 30px 0px 30px;
+    height: 1540px;
+  }
+
+  .foto2 {
+    left: 140px;
+  }
+}
+
+@media only screen and (max-width: 351px){
+  .assinatura {
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+    color: #424242;
+  }
+
+  .coracaoFim {
+    height: 60px;
+    width: 60px;
+  }
+
+  .ass {
+    margin-top: 25px;
+
+  }
+}
+
+@media only screen and (max-width: 351px){
+  .segundo, .quarto {
+    left: 90px;
+  }
+}
+
+@media only screen and (max-width: 340px){
+  .lhama {
+    right: 170px;
+    height: 100px;
+    top: 250px;
+    width: 100px;
+  }
+
+  .fotoSaturada {
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 330px){
+
+  .segundo, .quarto{
+    left: 80px;
+  }
+
+  .foto2 {
+    left: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
